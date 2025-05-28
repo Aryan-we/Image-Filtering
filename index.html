@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Effect Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="uimage">
+        <button>Upload Image
+        <input type="file" accept=".png,.jpeg,.jpg" onchange="upload()" id="upload">
+    </button>
+    <a href="#" id="download">  
+        <button onclick="download()">Download</button></a>
+    </div>
+    <header>
+        <img src="#"  height="75%" width="90%" id="pic">
+        <div class="image_effect">
+            <div>brightness <br>
+                <input type="range" min="0" max="200" id="bright" oninput="bright()">
+                <p id="val1"></p>
+            </div>
+            <div>contrast 
+                <input type="range" min="0" max="200" id="contrast" oninput="contrast()">
+                <p id="val2"></p>
+            </div>
+            <div>saturate 
+                <input type="range" min="0" max="200" id="saturate" oninput="saturate()">
+                <p id="val3"></p>
+            </div>
+        </div>
+    </header>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
