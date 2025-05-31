@@ -9,13 +9,13 @@
 <body>
     <div id="uimage">
         <button>Upload Image
-        <input type="file" accept=".png,.jpeg,.jpg" onchange="upload()" id="upload">
+        <input type="file" accept="image/*" onchange="upl()" id="upload">
     </button>
     <a href="#" id="download">  
         <button onclick="download()">Download</button></a>
     </div>
     <header>
-        <img src="#"  height="75%" width="90%" id="pic">
+        <img src="#" width="60%" id="img">
         <div class="image_effect">
             <div>brightness <br>
                 <input type="range" min="0" max="200" id="bright" oninput="bright()">
