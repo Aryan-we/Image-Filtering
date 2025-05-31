@@ -25,21 +25,16 @@ function saturate(){
 
 
 }
-var a="";
+
 function upl(){
-   /* var upload=document.getElementById("upload").value.replace("C:\\fakepath\\","");
-    document.getElementById("pic").style.display="inline";
-    document.querySelector("header").style.height="110vh";
-    document.getElementById("pic").src="./images/"+upload;*/
+   
   const preview = document.getElementById("img");
  
   const file = document.getElementById("upload").files[0];
   const reader = new FileReader();
 
   reader.addEventListener("load", () => {
-    // convert image file to base64 string
     preview.src = reader.result;
-    a=reader.result
   }, false);
 
   if (file) {
@@ -51,7 +46,7 @@ function upl(){
 function download(){
     var image=document.getElementById("upload");
      if(image.files.length > 0){
-        document.title=a;
+        document.title="img";
     window.print();
      }else{
     alert("Please uploan an image for Filtering!");
