@@ -67,3 +67,15 @@ header{
 #pic{
     display: none;
 }
+@media print{
+.image_effect,#download,#uimage,div{
+    display:none;
+}
+header{
+    border:none;
+}
+}
+@page{
+    size:auto;
+    margin:0mm;
+}
