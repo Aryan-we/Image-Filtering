@@ -54,7 +54,7 @@ function download(){
         document.title=a;
     window.print();
      }else{
-    alert("Please Select the Image for Filtering!");
+    alert("Please uploan an image for Filtering!");
     return;
      }
   
