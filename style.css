@@ -64,7 +64,7 @@ header{
     left: 0px;
     cursor: pointer;
 }
-#pic{
+#img{
     display: none;
 }
 @media print{
