@@ -79,3 +79,12 @@ header{
     size:auto;
     margin:0mm;
 }
+@media (max-width:900px){
+    .image_effect div input{
+        width: 100%;
+        
+    }
+    .image_effect div font,#val1,#val2,#val3{
+        font-size: 14px;
+    }
+}
